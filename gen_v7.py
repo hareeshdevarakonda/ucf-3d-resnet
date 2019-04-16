@@ -103,7 +103,7 @@ def dataGenerator(lines):
                x_train = x_train.astype("float32")
                y_train = y_train.astype("float32")
                x_train /= 255
-               y_train /= 255
+               #y_train /= 255
                yield x_train, y_train
                x_train = []
                y_train = []
@@ -168,7 +168,7 @@ def val_dataGenerator(lines):
                x_val = x_val.astype("float32")
                y_val = y_val.astype("float32")
                x_val /= 255
-               y_val /= 255
+               #y_val /= 255
                yield x_val, y_val
                x_val = []
                y_val = []
